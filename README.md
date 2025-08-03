@@ -6,7 +6,7 @@ This repository contains a collection of mini front-end projects built using pur
 
 ## Project List
 
-| Project Name            |                            Live Demo                               |              Code Folder                 |
+| Project Name            |                            Live Demo                               |              View Code                |
 |-------------------------|--------------------------------------------------------------------|------------------------------------------|
 | Portfolio–Web Developer | [Live Preview](https://portfolios-frontend-developer.netlify.app/) | [Portfolio Web Developer](./coming-soon) |
 | Portfolio–Photographer  | [Live Preview](https://portfolios-photographer.netlify.app/)       | [`Portfolio Photographer`](./coming-soon)|     
