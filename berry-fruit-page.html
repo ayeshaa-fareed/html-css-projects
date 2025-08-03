@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Miracle Berry - A Rare Fruit That Changes Taste</title>
+    <style>
+        :root {
+            --primary-color: #5c8d89;
+            --secondary-color: #74b49b;
+            --accent-color: #f4f9f4;
+            --text-color: #2c3e50;
+            --light-text: #f8f9fa;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://placehold.co/1920x1080') no-repeat center center/cover;
+            height: 70vh;
+            color: var(--light-text);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 2rem;
+        }
+        
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin-bottom: 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+        
+        .main-content {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .main-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        
+        .sidebar {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            align-self: start;
+        }
+        
+        h2, h3 {
+            color: var(--primary-color);
+            margin: 1rem 0;
+        }
+        
+        .fruit-fact {
+            background-color: var(--accent-color);
+            padding: 1rem;
+            border-left: 4px solid var(--secondary-color);
+            margin: 1rem 0;
+        }
+        
+        .related-fruit {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .related-fruit img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 1rem;
+        }
+        
+        .comment-section {
+            margin-top: 2rem;
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .comment-form input, .comment-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .comment-form button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .comment-form button:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        .comment {
+            margin: 1rem 0;
+            padding: 1rem;
+            background-color: var(--accent-color);
+            border-radius: 4px;
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://placehold.co/150x150/5c8d89/f4f9f4?text=Miracle+Berry" alt="Close-up of miracle berry fruit on a branch with glossy red skin and green leaves" style="border-radius: 50%; margin-bottom: 1rem;">
+        <h1>The Miraculous Miracle Berry</h1>
+        <p>Discover how this West African fruit can make sour foods taste sweet</p>
+    </header>
+    
+    <div class="container">
+        <main class="main-content">
+            <article>
+                <h2>The Science Behind the Miracle</h2>
+                <img src="https://placehold.co/1200x800/74b49b/f4f9f4?text=Taste+Test+Lab" alt="Scientific laboratory setting with miracle berry tablets being tested with various fruits by researchers in white coats">
+                
+                <p>The miracle berry (Synsepalum dulcificum) is a fascinating fruit native to West Africa. What makes it extraordinary is a protein called miraculin that binds to taste receptors on the tongue. When you consume this small red berry, sour foods like lemons and limes suddenly taste incredibly sweet - for up to two hours!</p>
+                
+                <div class="fruit-fact">
+                    <h3>Quick Fact</h3>
+                    <p>The effect was first documented in 1725 by French explorer Chevalier des Marchais, who observed West African tribes consuming the berry before their meals.</p>
+                </div>
+                
+                <p>Modern scientists have studied the miracle berry extensively. The miraculin protein doesn't actually change the food's composition - it just temporarily alters how your taste buds perceive sour flavors. This makes it popular among chemotherapy patients experiencing taste alterations, diabetics seeking sugar alternatives, and curious food enthusiasts.</p>
+                
+                <h3>Cultivation and Availability</h3>
+                <img src="https://placehold.co/1200x600/5c8d89/f4f9f4?text=Berry+Farm" alt="Rows of miracle berry plants in a tropical greenhouse with lush green foliage and ripe red berries">
+                <p>While the miracle berry grows naturally in tropical West Africa, it's notoriously difficult to cultivate commercially. The plants require specific soil conditions, humidity levels, and pollinating insects. Florida has seen some success with miracle berry farms, but most berries sold internationally are frozen or freeze-dried to preserve the active protein.</p>
+            </article>
+            
+            <div class="comment-section">
+                <h2>Share Your Experience</h2>
+                <form class="comment-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <textarea placeholder="Have you tried miracle berries? Share your thoughts!" rows="5" required></textarea>
+                    <button type="submit">Post Comment</button>
+                </form>
+                
+                <div class="comments">
+                    <div class="comment">
+                        <h3>Food Science Student</h3>
+                        <p>I used miracle berries for a research project on taste perception. The results were astonishing - 95% of participants reported enhanced sweetness from acidic foods. The effect lasted between 45-120 minutes depending on the individual.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <aside class="sidebar">
+            <h2>Other Rare Fruits</h2>
+            
+            <div class="related-fruit">
+                <img src="https://placehold.co/80x80/74b49b/f4f9f4?text=Durian" alt="Spiky durian fruit split open to reveal its creamy yellow flesh">
+                <div>
+                    <h3>Durian</h3>
+                    <p>The "King of Fruits" with its notorious odor</p>
+                </div>
+            </div>
+            
+            <div class="related-fruit">
+                <img src="https://placehold.co/80x80/5c8d89/f4f9f4?text=Mangosteen" alt="Deep purple mangosteen fruit with white segmented flesh inside">
+                <div>
+                    <h3>Mangosteen</h3>
+                    <p>Tropical fruit with antioxidant properties</p>
+                </div>
+            </div>
+            
+            <div class="related-fruit">
+                <img src="https://placehold.co/80x80/74b49b/f4f9f4?text=Jackfruit" alt="Large spiky green jackfruit hanging from a tree with yellow flesh visible">
+                <div>
+                    <h3>Jackfruit</h3>
+                    <p>Massive fruit used as meat substitute</p>
+                </div>
+            </div>
+            
+            <div class="newsletter">
+                <h3>Subscribe for More</h3>
+                <p>Get updates on rare fruits and unusual edibles</p>
+                <input type="email" placeholder="Your email" style="width: 100%; padding: 0.5rem; margin: 0.5rem 0;">
+                <button type="submit" style="width: 100%;">Subscribe</button>
+            </div>
+        </aside>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Rare Fruits Explorer | All Rights Reserved</p>
+        <p>Disclaimer: Consult a physician before trying miracle berries, especially if you have any medical conditions.</p>
+    </footer>
+
+    <script>
+        document.querySelector('.comment-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = this.querySelector('input').value;
+            const commentText = this.querySelector('textarea').value;
+            
+            if (name && commentText) {
+                const commentDiv = document.createElement('div');
+                commentDiv.className = 'comment';
+                commentDiv.innerHTML = `
+                    <h3>${name}</h3>
+                    <p>${commentText}</p>
+                `;
+                
+                document.querySelector('.comments').prepend(commentDiv);
+                this.reset();
+            }
+        });
+    </script>
+</body>
+</html>

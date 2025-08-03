@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Durian Diaries - Exploring the King of Fruits</title>
+    <style>
+        /* Base Styles */
+        :root {
+            --primary: #5A7247;
+            --secondary: #F8E19D;
+            --accent: #D45D79;
+            --light: #F5F5F5;
+            --dark: #333333;
+            --text: #2D2D2D;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--light);
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-family: 'Georgia', serif;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-top: 2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--secondary);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 1.5rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary);
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            color: rgba(255,255,255,0.9);
+        }
+
+        /* Main Content */
+        main {
+            padding: 3rem 0;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+        }
+
+        .article-content {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .featured-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .widget {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .widget-title {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary);
+        }
+
+        /* Tags */
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            background-color: var(--secondary);
+            color: var(--text);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+
+        .tag:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        /* Related Articles */
+        .related-article {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .related-article:last-child {
+            border-bottom: none;
+        }
+
+        .related-article img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .related-article h4 {
+            font-size: 1rem;
+        }
+
+        /* Author Bio */
+        .author-bio {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+        }
+
+        .author-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--secondary);
+        }
+
+        .author-text h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            text-align: left;
+        }
+
+        .footer-col h3 {
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+        }
+
+        .copyright {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .featured-image {
+                height: 300px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Special Elements */
+        .intro {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 2rem;
+            color: var(--dark);
+            border-left: 4px solid var(--secondary);
+            padding-left: 1rem;
+        }
+
+        .pull-quote {
+            font-size: 1.3rem;
+            font-style: italic;
+            font-weight: 500;
+            color: var(--primary);
+            border-left: 4px solid var(--secondary);
+            padding: 1rem 0 1rem 2rem;
+            margin: 2rem 0;
+        }
+
+        .fact-box {
+            background-color: var(--secondary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .fact-title {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <nav>
+                <a href="#" class="logo">Durian Diaries</a>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="hero">
+                <h1>The Thorny Delight: Exploring the Durian Fruit</h1>
+                <p>An in-depth look at Southeast Asia's most controversial fruit - loved by many, reviled by some, but impossible to ignore</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <main>
+            <article class="article-content">
+                <img src="https://placehold.co/800x500/5A7247/FFFFFF?text=Durian+Fruit&font=georgia" alt="Close-up of a ripe durian fruit split open showing creamy yellow flesh inside its spiky green husk" class="featured-image">
+                
+                <p class="intro">In the humid jungles of Southeast Asia grows a fruit so pungent it's banned in hotels and public transportation across the region. Yet despite—or perhaps because of—its notorious reputation, the durian commands a cult-like following among food adventurers.</p>
+                
+                <h2>What Makes Durian Special?</h2>
+                <p>The durian (Durio zibethinus) is a large tropical fruit native to Borneo and Sumatra, weighing between 1-3 kilograms and covered in formidable thorns. But it's not the appearance that makes durian infamous—it's the smell.</p>
+                
+                <div class="fact-box">
+                    <div class="fact-title">Durian Facts:</div>
+                    <p>Scientific Name: Durio zibethinus</p>
+                    <p>Native to: Borneo and Sumatra</p>
+                    <p>Season: June-August</p>
+                    <p>Average Weight: 1-3 kg</p>
+                </div>
+                
+                <h3>The Infamous Aroma</h3>
+                <p>Descriptions of durian's smell range from "rotting onions" to "turpentine and onions, garnished with a gym sock." The odor comes from sulfur compounds similar to those found in rotten eggs and cooked onions. The smell is so persistent that in 2018, the University of Sydney evacuated an entire building when someone brought durian into a study room.</p>
+                
+                <div class="pull-quote">"The odor is best described as pig-shit, turpentine and onions, garnished with a gym sock. It can be smelled from yards away." - Anthony Bourdain</div>
+                
+                <h3>The Sublime Taste</h3>
+                <p>Despite its challenging aroma, durian enthusiasts describe the flesh as having a rich, custard-like texture with a complex flavor profile:</p>
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Creamy vanilla</li>
+                    <li>Caramelized onion</li>
+                    <li>Almonds</li>
+                    <li>Whiskey notes</li>
+                </ul>
+                
+                <p>The texture varies between varieties—some are thick like cheesecake while others are runny like melted ice cream. Temperature also affects the experience; chilled durian has milder aroma intensity.</p>
+                
+                <h2>Cultural Significance</h2>
+                <p>In Southeast Asia, durian is more than just fruit—it's part of the cultural fabric:</p>
+                
+                <img src="https://placehold.co/600x400/5A7247/FFFFFF?text=Durian+Market&font=georgia" alt="Vibrant night market in Bangkok with durian vendors displaying spiky fruits on wooden carts, illuminated by hanging lanterns" style="width: 100%; margin: 1.5rem 0; border-radius: 8px;">
+                
+                <h3>The King of Fruits</h3>
+                <p>Durian holds the honorary title "King of Fruits" in Malaysia, Thailand, and Indonesia. This isn't hyperbole—in these countries, durian season sparks nationwide excitement, with people planning durian-tasting road trips the way Americans plan fall foliage tours.</p>
+                
+                <h3>Economic Impact</h3>
+                <p>Premium cultivars can sell for hundreds of dollars per fruit. In China, demand has created a lucrative export market—in 2018, Malaysia exported over $60 million worth of durians to China.</p>
+                
+                <h2>Health Benefits</h2>
+                <p>Beyond its polarizing flavor, durian packs impressive nutritional benefits:</p>
+                
+                <div class="fact-box">
+                    <div class="fact-title">Nutritional Profile (per 100g):</div>
+                    <p>Calories: 147</p>
+                    <p>Protein: 1.47g</p>
+                    <p>Carbs: 27.09g</p>
+                    <p>Fiber: 3.8g</p>
+                    <p>Vitamin C: 19.7mg (33% DV)</p>
+                    <p>Potassium
+                </div>
+
+                <h2>Is It Worth Trying?</h2>
+                <p>If you're adventurous with food, durian is an experience you won’t forget. While many are put off by the smell, others find the flavor addictive and utterly unique. Just be sure to try it fresh from a reputable vendor—your taste buds will thank you!</p>
+
+                <!-- Author Bio -->
+                <div class="author-bio">
+                    <img src="https://placehold.co/100x100/5A7247/FFFFFF?text=A" alt="Author" class="author-avatar">
+                    <div class="author-text">
+                        <h3>About the Author</h3>
+                        <p><strong>Ayesha Fareed</strong> is a web designer and curious foodie who loves exploring unique ingredients and global flavors. When she's not coding or designing, she's out tasting exotic fruits (like durian!) around the world.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="widget">
+                    <h3 class="widget-title">Tags</h3>
+                    <div class="tags">
+                        <span class="tag">Durian</span>
+                        <span class="tag">Exotic Fruits</span>
+                        <span class="tag">Asia</span>
+                        <span class="tag">Food Culture</span>
+                        <span class="tag">Nutrition</span>
+                        <span class="tag">Travel</span>
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <h3 class="widget-title">Related Articles</h3>
+                    <div class="related-article">
+                        <img src="https://placehold.co/80x80/5A7247/FFFFFF?text=DF" alt="Dragon Fruit">
+                        <div>
+                            <h4><a href="#">Dragon Fruit: A Tropical Marvel</a></h4>
+                            <p>A look into the vibrant cactus fruit making waves in wellness communities.</p>
+                        </div>
+                    </div>
+                    <div class="related-article">
+                        <img src="https://placehold.co/80x80/5A7247/FFFFFF?text=M" alt="Mangosteen">
+                        <div>
+                            <h4><a href="#">Mangosteen: The Queen to Durian's King</a></h4>
+                            <p>Why mangosteen complements durian and how it's used in Southeast Asian remedies.</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Follow Me</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Subscribe</h3>
+                <p>Get the latest exotic fruit guides and recipes straight to your inbox.</p>
+                <p><a href="#" style="color: var(--secondary); text-decoration: underline;">Join the newsletter</a></p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Durian Diaries | Designed by Ayesha Fareed</p>
+        </div>
+    </footer>
+</body>
+</html>

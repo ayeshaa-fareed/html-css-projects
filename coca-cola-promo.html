@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coca-Cola – Open Happiness</title>
+  <style>
+    :root {
+      --primary: #E3222B;
+      --secondary: #FFD700;
+      --dark: #111;
+      --light: #fff;
+      --gray: #f2f2f2;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--light);
+      color: var(--dark);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      background: url('https://i.imgur.com/Ka7NnJX.jpg') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      position: relative;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+    }
+
+    .hero-content h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero-content a {
+      background-color: var(--primary);
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .hero-content a:hover {
+      background-color: white;
+      color: var(--primary);
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .section h2 {
+      color: var(--primary);
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+    }
+
+    .products {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .product-card {
+      width: 260px;
+      padding: 1.5rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      margin-bottom: 1rem;
+    }
+
+    .timeline {
+      max-width: 900px;
+      margin: auto;
+      text-align: left;
+    }
+
+    .timeline-item {
+      background: var(--gray);
+      padding: 1rem 1.5rem;
+      margin-bottom: 1.5rem;
+      border-left: 5px solid var(--primary);
+    }
+
+    .timeline-item h4 {
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+
+    .fun-facts {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .fact-box {
+      background: var(--primary);
+      color: white;
+      padding: 2rem;
+      width: 250px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+
+    .fact-box:hover {
+      background: #c31d26;
+    }
+
+    .cta-section {
+      background: var(--primary);
+      color: white;
+      padding: 4rem 2rem;
+    }
+
+    .cta-section h2 {
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .cta-section p {
+      margin-bottom: 2rem;
+    }
+
+    .cta-section a {
+      background: white;
+      color: var(--primary);
+      padding: 0.8rem 1.8rem;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    .testimonials {
+      background: #f9f9f9;
+      padding: 4rem 2rem;
+    }
+
+    .testimonial {
+      max-width: 700px;
+      margin: 2rem auto;
+      font-style: italic;
+    }
+
+    .subscribe {
+      background: var(--gray);
+      padding: 3rem 2rem;
+    }
+
+    .subscribe input {
+      padding: 0.8rem;
+      width: 250px;
+      border: none;
+      border-radius: 4px;
+      margin-right: 1rem;
+    }
+
+    .subscribe button {
+      padding: 0.8rem 1.5rem;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+
+    footer a {
+      color: var(--secondary);
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 2.2rem;
+      }
+
+      .products, .fun-facts {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .subscribe input {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+
+      .subscribe button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="hero-content">
+      <h1>Open a Coke. Open Happiness.</h1>
+      <p>The world's most refreshing drink—now even more unforgettable. Taste the magic of Coca-Cola.</p>
+      <a href="#">Grab a Bottle</a>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2>Our Legendary Lineup</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://i.imgur.com/IbUj48A.png" alt="Classic Coke">
+        <h3>Classic Coca-Cola</h3>
+        <p>The original. Unmatched in taste. Loved globally.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://i.imgur.com/8ckkAmK.png" alt="Coke Zero">
+        <h3>Coke Zero Sugar</h3>
+        <p>Bold taste. Zero guilt. All the fizz you love.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://i.imgur.com/dIfB6PQ.png" alt="Diet Coke">
+        <h3>Diet Coke</h3>
+        <p>Light and crisp. A lifestyle choice with style.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>From 1886 to Today</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h4>1886 – The Beginning</h4>
+        <p>Invented by Dr. John S. Pemberton in Atlanta, Georgia, Coca-Cola was first sold at Jacob’s Pharmacy.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>1928 – Olympic Debut</h4>
+        <p>Coca-Cola becomes an official sponsor of the Olympics, showing its global aspirations.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>1985 – Coke in Space</h4>
+        <p>Coca-Cola becomes the first soft drink consumed in space aboard the Space Shuttle Challenger.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>2025 – Still the Icon</h4>
+        <p>More than 1.9 billion servings of Coca-Cola products are enjoyed every day worldwide.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#fff7f7;">
+    <h2>Did You Know?</h2>
+    <div class="fun-facts">
+      <div class="fact-box">
+        <h3>1,000+</h3>
+        <p>Different Coca-Cola brands worldwide.</p>
+      </div>
+      <div class="fact-box">
+        <h3>200+</h3>
+        <p>Countries where Coca-Cola is sold.</p>
+      </div>
+      <div class="fact-box">
+        <h3>1915</h3>
+        <p>The year the iconic contoured bottle was created.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Ready to Taste the Legend?</h2>
+    <p>Find your favorite Coca-Cola product in stores near you or order online now.</p>
+    <a href="#">Shop Now</a>
+  </section>
+
+  <section class="testimonials">
+    <h2>What the World Thinks</h2>
+    <div class="testimonial">
+      <p>"Coca-Cola is part of every memory — birthdays, festivals, road trips — always there, always refreshing!"</p>
+      <strong>- Fatima S.</strong>
+    </div>
+    <div class="testimonial">
+      <p>"I’ve tried them all. Nothing beats the original Coke on a summer day."</p>
+      <strong>- James D.</strong>
+    </div>
+  </section>
+
+  <section class="subscribe">
+    <h2>Join the Coke Club</h2>
+    <p>Sign up for special offers, giveaways, and exclusive Coca-Cola news.</p>
+    <form>
+      <input type="email" placeholder="Your Email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Coca-Cola Fan Experience. All rights reserved.</p>
+    <p>
+      <a href="#">Instagram</a> |
+      <a href="#">Facebook</a> |
+      <a href="#">YouTube</a> |
+      <a href="#">Contact</a>
+    </p>
+  </footer>
+
+</body>
+</html>
