@@ -11,7 +11,7 @@ This repository contains a collection of mini front-end projects built using pur
 | Portfolio–Web Developer | [View](https://portfolios-frontend-developer.netlify.app/) 
 | Portfolio–Photographer  | [View](https://portfolios-photographer.netlify.app/)   | [`coming-soon`](./coming-soon)    |     
 | Chocolate-promo         | [View](https://chocolate-promo-page.netlify.app/)   | [`galaxy-chocolate`](./galaxy-chocolate) |
-| Buddha’s Hand Fruit Page| [View](https://buddhas-hand-by-ayesha.netlify.app)  | [`buddhas-hand`](./buddhas-hand)    |
+| Buddha’s Hand Fruit Page| [View](https://buddhas-hand.netlify.app/)  | [`buddhas-hand`](./buddhas-hand)    |
 | Durian Fruit page       | [View](https://durian-fruit.netlify.app/)           | [`dragon-fruit`](./dragon-fruit)          |
 | coca-cola-promo         | [View](https://coca-cola-promotion.netlify.app/)           | [`404-page`](./404-page)           |
 
