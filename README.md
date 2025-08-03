@@ -6,15 +6,15 @@ This repository contains a collection of mini front-end projects built using pur
 
 ## Project List
 
-| Project Name            | Live Preview                                                       | Code Folder                              |
-|-------------------------|-----------------------------------------------------               |----------------------------------        |
-| Portfolio–Web Developer | [Live Preview](https://portfolios-frontend-developer.netlify.app/) |                                          |
-| Portfolio–Photographer  | [Live Preview](https://portfolios-photographer.netlify.app/)       | [`coming-soon`](./coming-soon)           |     
-| Chocolate-promo         | [Live Preview](https://chocolate-promo-page.netlify.app/)          | [`galaxy-chocolate`](./galaxy-chocolate) |
-| Buddha’s Hand Fruit Page| [Live Preview](https://buddhas-hand.netlify.app/)                  | [`buddhas-hand`](./buddhas-hand)         |
-| Durian Fruit page       | [Live Preview](https://durian-fruit.netlify.app/)                  | [`dragon-fruit`](./dragon-fruit)         |
-| coca-cola-promo         | [Live Preview](https://coca-cola-promotion.netlify.app/)           | [`404-page`](./404-page)                 |
-| Miracle Berry page      | [Live Preview](https://berry-fruit-ayesha.netlify.app/)            | [`miracle-berry`](./miracle-berry)       |      
+| Project Name            |                            Live Demo                               |              Code Folder                 |
+|-------------------------|--------------------------------------------------------------------|------------------------------------------|
+| Portfolio–Web Developer | [Live Preview](https://portfolios-frontend-developer.netlify.app/) | [Portfolio Web Developer](./coming-soon) |
+| Portfolio–Photographer  | [Live Preview](https://portfolios-photographer.netlify.app/)       | [`Portfolio Photographer`](./coming-soon)|     
+| Chocolate-promo         | [Live Preview](https://chocolate-promo-page.netlify.app/)          | [`Chocolate promo  `](./galaxy-chocolate)|
+| Buddha’s Hand Fruit Page| [Live Preview](https://buddhas-hand.netlify.app/)                  | [`buddhas hand`](./buddhas-hand)         |
+| Durian Fruit page       | [Live Preview](https://durian-fruit.netlify.app/)                  | [`dragon fruit`](./dragon-fruit)         |
+| coca-cola-promo         | [Live Preview](https://coca-cola-promotion.netlify.app/)           | [`coca-cola promo `](./404-page)         |
+| Miracle Berry page      | [Live Preview](https://berry-fruit-ayesha.netlify.app/)            | [`miracle berry`](./miracle-berry)       |      
 
 ## Code Usage Notice
 
