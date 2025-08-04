@@ -8,13 +8,13 @@ This repository contains a collection of mini front-end projects built using pur
 
 | Project Name            |                            Live Demo                               |              View Code                |
 |-------------------------|--------------------------------------------------------------------|------------------------------------------|
-| Portfolio–Web Developer | [Live Preview](https://portfolios-frontend-developer.netlify.app/) | [Portfolio Web Developer](portfolio2.html) |
-| Portfolio–Photographer  | [Live Preview](https://portfolios-photographer.netlify.app/)       | [`Portfolio Photographer`](portfolio1.html)|     
+| Portfolio–Web Developer | [Live Preview](https://frontend-developer-portfolios.netlify.app/) | [Portfolio Web Developer](portfolio2.html) |
+| Portfolio–Photographer  | [Live Preview](https://photographer-portfolios.netlify.app/)       | [`Portfolio Photographer`](portfolio1.html)|     
 | Chocolate-promo         | [Live Preview](https://chocolate-promo-page.netlify.app/)          | [`Chocolate promo  `](chocolate-promo.html)|
 | Buddha’s Hand Fruit Page| [Live Preview](https://buddhas-hand.netlify.app/)                  | [`buddhas hand`](buddha's-hand.html)         |
-| Durian Fruit page       | [Live Preview](https://durian-fruit.netlify.app/)                  | [`dragon fruit`](Durian-Fruit-page.html)         |
-| coca-cola-promo         | [Live Preview](https://coca-cola-promotion.netlify.app/)           | [`coca-cola promo `](coca-cola-promo.html)        |
-| Miracle Berry page      | [Live Preview](https://berry-fruit-ayesha.netlify.app/)            | [`miracle berry`](berry-fruit-page.html)       |      
+| Durian Fruit page       | [Live Preview](https://durain-fruit.netlify.app/)                  | [`dragon fruit`](Durian-Fruit-page.html)         |
+| coca-cola-promo         | [Live Preview](https://coca-cola-promo.netlify.app/)               | [`coca-cola promo `](coca-cola-promo.html)        |
+| Miracle Berry page      | [Live Preview](https://miracle-berry.netlify.app/)                 | [`miracle berry`](berry-fruit-page.html)       |      
 
 ## Code Usage Notice
 
